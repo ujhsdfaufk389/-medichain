@@ -1,0 +1,32 @@
+{
+  "case_id": "PA-2026-002",
+  "submission_date": "2026-06-14",
+  "patient": {
+    "id": "PT-FAKE-9872",
+    "age": 52,
+    "gender": "Female",
+    "insurance_id": "INS-FAKE-4421",
+    "insurance_plan": "Medicare Advantage Plan B"
+  },
+  "diagnosis": {
+    "icd10_code": "M54.5",
+    "description": "Chronic lower back pain",
+    "duration_months": 8,
+    "severity": "Moderate to severe"
+  },
+  "requested_procedure": {
+    "cpt_code": "72148",
+    "description": "MRI lumbar spine with contrast",
+    "urgency": "Routine",
+    "requesting_physician": "Dr. Sarah Ahmed (NPI: FAKE-1234)"
+  },
+  "doctor_notes": "Patient has chronic lower back pain for 8 months. Pain is 7/10, radiating to left leg. NSAIDs provided minimal relief. Patient completed 8 weeks of physical therapy with limited improvement. Requesting MRI to rule out disc herniation.",
+  "uploaded_documents": [
+    "referral_letter.pdf",
+    "diagnosis_report.pdf",
+    "physical_therapy_records.pdf",
+    "conservative_treatment_history.pdf",
+    "pt_progress_notes.pdf"
+  ],
+  "missing_note": "No missing documents. Physical therapy history and conservative treatment records included."
+}

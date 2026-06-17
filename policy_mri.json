@@ -1,0 +1,29 @@
+{
+  "policy_id": "POL-MRI-LUMBAR-2026",
+  "insurance_plan": "Medicare Advantage Plan B",
+  "procedure": "MRI Lumbar Spine (CPT 72148)",
+  "covered": true,
+  "prerequisites": {
+    "conservative_treatment": {
+      "required": true,
+      "minimum_duration_weeks": 6,
+      "accepted_treatments": ["physical therapy", "chiropractic", "NSAIDs"],
+      "documentation_required": "Treating provider notes showing 6+ weeks"
+    },
+    "specialist_referral": {
+      "required": true,
+      "specialties": ["orthopedics", "neurology", "pain management"]
+    }
+  },
+  "required_documents": [
+    "Referral letter from in-network physician",
+    "Diagnosis documentation with ICD-10 code",
+    "Conservative treatment history (minimum 6 weeks)",
+    "Physical therapy records or provider notes"
+  ],
+  "auto_denial_triggers": [
+    "No documented conservative treatment",
+    "Out-of-network referring physician",
+    "Missing ICD-10 diagnosis code"
+  ]
+}
